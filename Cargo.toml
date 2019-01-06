@@ -1,0 +1,8 @@
+[package]
+name = "rust_fortune_teller"
+version = "0.1.0"
+authors = ["alex462 <alex.reinhart462@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+libc = "0.2.46"
