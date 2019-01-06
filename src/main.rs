@@ -4,15 +4,18 @@ fn main() {
     println!("Do you want to play a game? y/n: ");
 
     let mut user_plays = String::new();
+    let opt_in = "y";
+    let opt_out = "n";
 
     io::stdin().read_line(&mut user_plays)
         .expect("Failed to read line");
 
-    play_game();
-
-    //match user_plays.cmp(){
-
-    //}
+    if user_plays == opt_in {
+        play_game();
+    }
+    if user_plays == opt_out {
+        println!("Human forfeits. Computer wins by default.");
+    }
 }
 
 fn play_game() {
