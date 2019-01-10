@@ -13,8 +13,8 @@ fn main() {
 
     match user_plays.trim_end() {
         "y" => println!("FUCK YEA"),
-        "n" => println!("HELL NO"),
-        _ => println!("askdfjwkejfkf"),
+        "n" => println!("Human forfeits. Computer wins by default."),
+        _ => main(),
     }
 
 //     match &*str {
