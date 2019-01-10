@@ -11,19 +11,21 @@ fn main() {
         .read_line(&mut user_plays)
         .expect("Failed to read line");
 
-    match &user_plays[..] {
+    match user_plays.trim_end() {
         "y" => println!("FUCK YEA"),
         "n" => println!("HELL NO"),
         _ => println!("askdfjwkejfkf"),
     }
 
-    // match &*str {
-    // if user_plays == String::from("y") {
-    //     takes_str_yes(&user_plays);
-    // } else {
-    //     takes_str_no(&user_plays);
-    // }
-    // }
+//     match &*str {
+//     if user_plays == String::from("y") {
+//         takes_str_yes(&user_plays);
+//         println!("FUCK YEA")
+//     } else {
+//         takes_str_no(&user_plays);
+//         println!("HELL NO")
+//     }
+//     }
 }
 
 // fn takes_str_yes(_user_plays: &str) {
