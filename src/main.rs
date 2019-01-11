@@ -12,20 +12,14 @@ fn main() {
         .expect("Failed to read line");
 
     match user_plays.trim_end() {
-        "y" => println!("FUCK YEA"),
+        "y" => instructions(),
         "n" => println!("Human forfeits. Computer wins by default."),
         _ => main(),
     }
+}
 
-//     match &*str {
-//     if user_plays == String::from("y") {
-//         takes_str_yes(&user_plays);
-//         println!("FUCK YEA")
-//     } else {
-//         takes_str_no(&user_plays);
-//         println!("HELL NO")
-//     }
-//     }
+fn instructions() {
+    println!( "ORIGAMI FORTUNE TELLER GAME\nPicture a four-sided paper fortune teller, labeled with colors on the four outside squares\nand numbers on the 8 inside surfaces. Upon opening the fortune teller even further, your \nmagical personalized fortune is revealed.\nBegin.\n\n");
 }
 
 // fn takes_str_yes(_user_plays: &str) {
