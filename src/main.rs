@@ -20,6 +20,16 @@ fn main() {
 
 fn instructions() {
     println!( "ORIGAMI FORTUNE TELLER GAME\nPicture a four-sided paper fortune teller, labeled with colors on the four outside squares\nand numbers on the 8 inside surfaces. Upon opening the fortune teller even further, your \nmagical personalized fortune is revealed.\nBegin.\n\n");
+    play_round1();
+}
+
+fn play_round1() {
+    println!("Choose a color: 
+1. RED
+2. GREEN 
+3. YELLOW
+4. BLUE
+")
 }
 
 // fn takes_str_yes(_user_plays: &str) {
